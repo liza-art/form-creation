@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #14b8a6; /* Teal 500 */
+  --primary-hover-color: #0d9488; /* Teal 600 */
+  --text-color: #27272a; /* Zinc 800 */
+  --label-color: #52525b; /* Zinc 600 */
+  --input-bg-color: #fafafa; /* Zinc 50 */
+  --input-border-color: #d4d4d8; /* Zinc 300 */
+  --input-focus-border-color: #14b8a6; /* Teal 500 */
+  --background-color: #f4f4f5; /* Zinc 100 */
+  --container-bg-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-size: 12px;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  margin: 30px;
+}
+
+form {
+  box-shadow: 0 0 5px var(--input-border-color);
+  border-radius: 20px;
+  height: 100%;
+  margin: 5vh 10vw;
+  background-color: var(--container-bg-color);
+}
+
+section {
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+section > h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+section > p {
+  font-size: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 9vh;
+  color: var(--label-color);
+
+  width: 30vw;
+}
+
+label {
+  font-weight: 900;
+  font-size: 14px;
+  color: var(--label-color);
+}
+
+input {
+  height: 40px;
+  width: 30vw;
+  border-radius: 10px;
+  border: solid var(--input-border-color) 1px;
+  background-color: var(--input-bg-color);
+}
+
+legend {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.container-for-items {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  justify-content: space-between;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  background-color: var(--input-bg-color);
+  border-radius: 10px;
+  border: var(--input-border-color) 1px solid;
+}
+
+.style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 44vh;
+}
+
+.second,
+.first,
+.third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.first {
+  height: 8vh;
+}
+
+div.first input {
+  height: 40px;
+}
+
+div.second {
+  height: 21vh;
+}
+
+div.second input {
+  height: 17vh;
+  width: 100%;
+}
+
+div.third {
+  height: 8vh;
+}
+
+.button-send {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  font-size: 20px;
+  width: 80%;
+  transition: box-shadow ease-in-out 0.5ms;
+  height: 8vh;
+  margin: 0 8vw 2vh;
+}
+
+.button-send:hover {
+  box-shadow: 0 0 10px var(--primary-hover-color);
+  border: solid var(--input-focus-border-color);
+}
